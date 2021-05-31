@@ -16,15 +16,14 @@ function copyContent(){
     const textarea = document.getElementById("password");
     textarea.select();
     document.execCommand("copy");
-    btnCopy.innerHTML= "<i class='fas fa-check check' id='check'></i>";
-
-         
+    btnCopy.classList.remove("fa-copy","copy");
+    btnCopy.classList.add("fa-check","check");
+    btnCopy.id="check";
+      
     setTimeout(function(){
         document.getSelection().removeAllRanges();
-        btnCopy.innerHTML= "copy";
+        btnCopy.classList.remove("fa-check","check");
+        btnCopy.classList.add("fa-copy","copy");
+        btnCopy.id="copy";
     },800);
-
-
-
-
 }

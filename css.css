@@ -57,14 +57,18 @@ input::placeholder {
     background: #f3f3f3;
 }
 
-.copy {
+.copy,.check {
     position: absolute;
-    top: 54px;
-    right: 15px;
+    top: 58px;
+    right: 17px;
     cursor: pointer;
     opacity: 0.2;
     font-size: 30px;
 }
 .copy:hover {
 opacity: 1;
+}
+
+.check {
+    color: #2e0;
 }
